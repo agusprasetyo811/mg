@@ -1,7 +1,7 @@
 
 h1. Simple Minify Generator
 
-Simple Minify js and css file 
+Simple Minify js and css file by Omapslab
 
 h1. Using
 
@@ -33,6 +33,7 @@ h1. Thanks to Source Totorial
 * https://github.com/mrclay/minify
 * jsMin & cssMin library for PHP
 ** http://code.google.com/p/cssmin/
+
 
 
 
