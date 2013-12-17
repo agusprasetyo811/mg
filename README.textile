@@ -1,4 +1,21 @@
 
 h1. Minify Generator
 
-Minify js and css file 
+Simple Minify js and css file 
+
+h1. Using
+
+Download and place minify folder on document root directory
+
+
+h1. Thanks to Source Totorial
+
+* http://castlesblog.com/2010/august/14/php-javascript-css-minification
+* https://github.com/mrclay/minify
+* jsMin & cssMin library for PHP
+** http://code.google.com/p/cssmin/
+
+
+
+
+

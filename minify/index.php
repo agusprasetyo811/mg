@@ -8,7 +8,7 @@
  *
  * @author OMAPS LABS Agus Prasetyo (agusprasetyo811@gmail.com)
  * @link http://omaps-lab.blogspot.com/p/meg.html, http://castlesblog.com/2010/august/14/php-javascript-css-minification
- * @filesource 	http://github.com/agusprasetyo811/mig
+ * @filesource 	http://github.com/agusprasetyo811/mg
  * @version 1.0;
  *
  */
