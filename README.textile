@@ -27,7 +27,7 @@ sparated by coma (,)
 @minify?style=YOUR_STYLE_PATH_1,YOUR_STYLE_PATH_2,YOUR_STYLE_PATH_3@
 
 
-h1. Thanks to Source Totorial
+h1. Thanks to Source Tutorial
 
 * http://castlesblog.com/2010/august/14/php-javascript-css-minification
 * https://github.com/mrclay/minify
