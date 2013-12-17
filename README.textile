@@ -1,11 +1,30 @@
 
-h1. Minify Generator
+h1. Simple Minify Generator
 
 Simple Minify js and css file 
 
 h1. Using
 
 Download and place minify folder on document root directory
+
+h3. Minify stylesheet
+
+@minify?style=YOUR_STYLE_PATH@
+
+@<link href="YOUR_SITE/minify?style=tes/style.testsource.css"/>@
+
+h3. Minify js
+
+@minify?js=YOUR_JS_PATH@
+
+@<script type="text/javascript" src="YOUR_SITE/minify?js=tes/jquery.form.testsource.js"></script>@
+
+h3. Grouping js / stylesheet
+
+sparated by coma (,)
+
+@minify?js=YOUR_JS_PATH_1,YOUR_JS_PATH_2,YOUR_JS_PATH_3@
+@minify?style=YOUR_STYLE_PATH_1,YOUR_STYLE_PATH_2,YOUR_STYLE_PATH_3@
 
 
 h1. Thanks to Source Totorial

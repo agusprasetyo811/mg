@@ -83,7 +83,6 @@ if ($style != NULL) {
 				}
 			}
 			echo $result;
-				
 		}
 
 	} else {
