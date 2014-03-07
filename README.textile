@@ -1,11 +1,12 @@
 
 h1. Simple Minify Generator
 
-Simple Minify js and css file by Omapslab
+Simple Minify JS & CSS file. This just is using jsMin & cssMin library.
+
 
 h1. Using
 
-Download and place minify folder on document root directory
+Download & place minify folder on document root directory.
 
 h3. Minify stylesheet
 
@@ -25,6 +26,71 @@ sparated by coma (,)
 
 @minify?js=YOUR_JS_PATH_1,YOUR_JS_PATH_2,YOUR_JS_PATH_3@
 @minify?style=YOUR_STYLE_PATH_1,YOUR_STYLE_PATH_2,YOUR_STYLE_PATH_3@
+
+h1. Example :
+
+<b>Minify Js</b>
+
+We have <b>file.js</b> in <b>assets/js/</b> folder
+
+<pre>
+
+$(document).ready(function(){
+  $("#show").hide();
+  $("button").click(function(){
+    $("#show").animate({
+      height:'toggle'
+    });
+  });
+});
+
+function submitForm(){
+	
+	var url = "http://yoursite.com/";
+	var template = "template/mytemp";
+	
+	$('#box-alert').html('<div align="center"><img src="http://yoursite.com/template/mytemp/images/loading/loading.gif"/><br><font color="black">Loading..</font></div>').fadeIn();
+	$('#myForms').ajaxSubmit({
+		success: function(response) {
+			$('#box-alert').hide(); 
+			if(response.indexOf('err_null') > -1) { 
+				$('#box-alert').text('Kamu belum memasukan inputan apapun..!!').fadeIn();
+			} else if(response.indexOf('err_order') > -1) {
+				$('#box-alert').text('Tolong isi Pesanan/Order Kamu dulu..!!').fadeIn();
+			} else if(response.indexOf('err_nama') > -1) {
+				$('#box-alert').text('Tolong isi nama lengkap kamu dulu..!!').fadeIn();
+			} else if(response.indexOf('err_hp') > -1) {
+				$('#box-alert').text('Tolong isi no HP Kamu dulu..!!').fadeIn();
+			} else if(response.indexOf('err_alamat') > -1) {
+				$('#box-alert').text('Tolong isi Alamat Lengkap Kamu dulu..!!').fadeIn();
+			} else if (response.indexOf('ss_ins') > -1) {
+				window.location = url + "index.php/mod_order_finish?n=from_order";
+			} else if (response.indexOf('ss_udt') > -1) {
+				window.location = url + "index.php/mod_order_finish?n=from_order";
+			} else if (response.indexOf('ss_ins_admin') > -1) {
+				window.location = url + "index.php/order";
+			} else if (response.indexOf('ss_udt_admin') > -1) {
+				window.location = url + "index.php/order";
+			}
+		}
+	});
+	return false; 
+}
+
+</pre>
+
+In <b>script src</b> call <b>source file.js</b> with minify
+<pre>
+
+<script src="http://yoursite.com/minify/?js=assets/js/file.js"></script>
+</pre>
+
+The result will be 
+
+<pre>
+
+$(document).ready(function(){$("#show").hide();$("button").click(function(){$("#show").animate({height:'toggle'});});});function submitForm(){var url="http://yoursite.com/";var template="template/mytemp";$('#box-alert').html('<div align="center"><img src="http://yoursite.com/template/mytemp/images/loading/loading.gif"/><br><font color="black">Tunggu dulu sebentar</font></div>').fadeIn();$('#myForms').ajaxSubmit({success:function(response){$('#box-alert').hide();if(response.indexOf('err_null')>-1){$('#box-alert').text('Kamu belum memasukan inputan apapun..!!').fadeIn();}else if(response.indexOf('err_order')>-1){$('#box-alert').text('Tolong isi Pesanan/Order Kamu dulu..!!').fadeIn();}else if(response.indexOf('err_nama')>-1){$('#box-alert').text('Tolong isi nama lengkap kamu dulu..!!').fadeIn();}else if(response.indexOf('err_hp')>-1){$('#box-alert').text('Tolong isi no HP Kamu dulu..!!').fadeIn();}else if(response.indexOf('err_alamat')>-1){$('#box-alert').text('Tolong isi Alamat Lengkap Kamu dulu..!!').fadeIn();}else if(response.indexOf('ss_ins')>-1){window.location=url+"index.php/mod_order_finish?n=from_order";}else if(response.indexOf('ss_udt')>-1){window.location=url+"index.php/mod_order_finish?n=from_order";}else if(response.indexOf('ss_ins_admin')>-1){window.location=url+"index.php/order";}else if(response.indexOf('ss_udt_admin')>-1){window.location=url+"index.php/order";}}});return false;}
+</pre>
 
 
 h1. Thanks to Source Tutorial
