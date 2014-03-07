@@ -3,7 +3,9 @@
 /**
  * Minify Enigine Generator Configuration
  * You can configurate by your setting that you want
- *
+ * 
+ * @author omapslab (agusprasetyo811@gmail.com)
+ * 
  */
 
 /**

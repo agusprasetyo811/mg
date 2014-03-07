@@ -5,6 +5,41 @@ Simple Minify JS & CSS file. This just is using jsMin & cssMin library.
 With Minify Engine Generator we can develop our js file and keep min file by easy. 
 
 
+h1. Configuration
+
+h3. Enable Cache 
+
+Enable cache by TRUE or FALSE
+
+h3. Cache Offset
+
+This is to set how long cache will be expired
+ For example 60 * 60 * 24 * 7 (This is will be expired one week)
+
+
+<pre>
+
+/**
+ * Cache Enable
+ * This is to enable cache with TRUE / FALSE
+ * if TRUE cache will enable
+ *
+ * Default FALSE
+ */
+$config['cache_enable'] = FALSE;
+
+
+/**
+ * Cache Offset
+ * This is to set how long cache will be expired
+ * For example 60 * 60 * 24 * 7 (This is will be expired one week)
+ *
+ * Default 0
+ */
+$config['cache_offset'] = 0;
+</pre> 
+
+
 h1. Using
 
 Download & place minify folder on document root directory.
