@@ -5,6 +5,13 @@ Simple Minify JS & CSS file. This just is using jsMin & cssMin library.
 With Minify Engine Generator we can develop our js file and keep min file by easy. 
 
 
+Get More info Like this page :
+https://www.facebook.com/omapslab
+
+Follow 
+@omapslab
+
+
 h1. Configuration
 
 h3. Enable Cache 
