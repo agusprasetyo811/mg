@@ -80,10 +80,8 @@ function submitForm(){
 </pre>
 
 In <b>script src</b> call <b>source file.js</b> with minify
-<pre>
+@<script src="http://yoursite.com/minify/?js=assets/js/file.js"></script>@
 
-<script src="http://yoursite.com/minify/?js=assets/js/file.js"></script>
-</pre>
 
 The result will be 
 
