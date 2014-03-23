@@ -15,7 +15,7 @@
 
 
 require_once 'engine/cssmin.php';
-require_once 'engine/jsmin.php';
+require_once 'engine/JSMin.php';
 
 require_once 'config.php';
 extract($config);
